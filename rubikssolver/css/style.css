@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: auto 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+
+nav {
+  width: 100%;
+  height: 130px;
+}
+
+.left-nav {
+  float: left;
+  height: 100%;
+  width: 25%;
+}
+
+.logo {
+  height: 80%;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 5%;
+  float: left;
+}
+
+h3 {
+  float: left;
+  font-size: 40px;
+}
+
+.right-nav {
+  float: right;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+}
+
+.right-nav div {
+  display: inline-block;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.active {
+  background-color: #414ab22f;
+}
+
+.right-nav div:hover {
+  background-color: #2b2929;
+}
+
+.right-nav a {
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.right-nav span {
+  display: inline-block;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 130px;
+  border: 3px solid #ffffff;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 75px;
+  margin-top: 15px;
+}
+
+/* Section */
+
+section {
+  width: 100%;
+}
+
+/* Article Uitvinder */
+
+.uitvinder {
+  width: 90%;
+  height: 475px;
+  margin-left: 5%;
+  margin-top: 3%;
+  border-bottom: 1px solid #ffffff;
+}
+
+.erno {
+  width: auto;
+  height: 400px;
+  float: left;
+}
+
+.uitvinder p {
+  float: right;
+  width: 50%;
+  font-size: 32px;
+  text-align: justify;
+  margin-top: 70px;
+  margin-right: 150px;
+}
+
+.uitvinder span {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+/* Article Speedcubing */
+
+.speedcubing {
+  width: 90%;
+  height: 1400px;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.maincube {
+  width: auto;
+  height: 400px;
+  float: left;
+}
+
+.speedcubing p {
+  float: right;
+  width: 50%;
+  font-size: 32px;
+  text-align: justify;
+  margin-top: 70px;
+  margin-right: 150px;
+}
+
+.speedcubing span {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+video {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+
+/* Footer */
+
+footer {
+  height: 10%;
+  width: 100%;
+  border: 3px solid #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+footer p span {
+  font-weight: bold;
+}
