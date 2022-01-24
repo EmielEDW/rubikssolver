@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fotoguide.css">
+    <title>Foto Guide</title>
+</head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <a href="#"><img src="fotos/logo.png" alt="rubix cube als logo" class="logo"></a>
+            <h3>RubiksSolver</h3>
+        </div>
+        <div class="right-nav">
+            <div>
+                <a href="index.html"><span>About</span></a>
+            </div>
+            <div>
+                <a href="notatie.html"><span>Notatie</span></a>
+            </div>
+            <div class="active">
+                <a href="fotoguide.html"><span>Foto Guide</span></a>
+            </div>
+            <div>
+                <a href="videoguide.html"><span>Video Guide</span></a>
+            </div>
+            <div>
+                <a href="solver.html"><span>Solver</span></a>
+            </div>
+            <div>
+                <a href="logboek.html"><span>Logboek</span></a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Foto Guide</h1>
+    </header>
+    <section>
+        <article class="intro">
+            <p class="stappen">
+                <span>De 8 stappen naar succes:</span>
+                <br><br>
+                <a href="#stap1"> <b>--></b> Stap 1: Maak de daisy.</a>
+                <br>
+                <a href="#stap2"><b>--></b> Stap 2: Maak het witte kruis.</a>
+                <br>
+                <a href="#stap3"><b>--></b> Stap 3: Maak de onderste laag.</a>
+                <br>
+                <a href="#stap4"><b>--></b> Stap 4: Maak de tweede laag.</a>
+                <br>
+                <a href="#stap5"><b>--></b> Stap 5: Maak het gele kruis.</a>
+                <br>
+                <a href="#stap6"><b>--></b> Stap 6: Maak de gele zijde</a>
+                <br>
+                <a href="#stap7"><b>--></b> Stap 7: Fix de hoeken.</a>
+                <br>
+                <a href="#stap8"><b>--></b> Stap 8: Fix de randen.</a>
+            </p>
+            <p class="tweede-info">
+                In deze specifieke guide zal je worden uitgelegd hoe je een 3x3 Rubiks Cube kan oplossen met behulp van foto's.
+            </p>
+        </article>
+        <article class="preinfo">
+            <h4>Voor we beginnen</h4>
+            <p>
+            Voor we beginnen aan de stap voor stap oplossing zijn er wat dingen die je moet begrijpen over een Rubiks Cube.
+            <br><br>
+            -   De Rubiks Cube heeft 6 vlakken.
+            <br>
+            -   Elk vlak heeft een vast midden die NIET kan bewegen.
+            <br>
+            -   Dit betekend dat de kant met een rood midden uiteindelijk ook rood zal zijn wanneer de cube opgelost is.
+            <br>
+            -   Wit staat tegenovergesteld van geel, rood tegenover oranje en groen tegenover blauw
+            <br>
+            -   Er zijn 3 verschillende stukken. Het midden was hier een van maar er zijn nog twee namelijk.
+            <br>
+            -   De randen zijn de stukken waar maar 2 kleuren aan zitten.
+            <br>
+            -   De stukken waar 3 kleuren aan zitten worden hoeken genoemd.
+        </p>
+        </article>
+        <article id="stap1">
+          <h4>Stap 1: Maak de daisy</h4>
+          <p class="p-s1">De eerste stap in het oplossen van de kubus is het maken van de Daisy.
+              <br>
+              Dit is hoe de Daisy er hoort uit te zien:
+          </p>
+          <img src="fotos/stap1-1.jpeg" alt="foto van opgeloste daisy." class="img-1-1">
+          <p class="p2-s1">
+            Deze eerste stap is zeer intuitief omdat je hiervoor geen algoritmes kunt gebruiken. Dit zal je dus zelf eerst een beetje moeten onder de knie moeten krijgen.
+            <br><br>
+            Het is de bedoeling dat het gele middenstuk omringt is door alle vier de rand stukken.
+            <br><br>
+            <b>Tips:</b>
+            de gele laag kan je vrij draaien zonder dat de kleuren verplaatst worden.
+            <br><br>
+            Eenmaal dat een wit rand stuk op zijn plaats hebt gezet hoef je die niet meer uit zijn positie te halen om andere witte rand stukken juist te positioneren.
+          </p>
+        </article>
+        <article id="stap2">
+            <h4>Stap 2: Maak het witte kruis</h4>
+            <p class="p-s2">
+                De tweede stap is het witte kruis maken. Dit doe je door te kijken naar een van de vier rand stukken.
+                Zoals je weet heeft een rand stuk 2 kleuren, dus ga je kijken naar het tweede kleur op dat stuk en draai je de laag tot die kleur overeenkomt met de kleur van het middenstuk aan de zijkant.
+            </p>
+            <img src="fotos/X.png" alt="" class="kruis-s2">
+            <img src="fotos/stap2-1.jpeg" alt="" class="img-2-1">
+            <img src="fotos/vinkje.png" alt="" class="vinkje-s2">
+            <img src="fotos/stap2-2.jpeg" alt="" class="img-2-2">
+            <p class="p2-s2">Wanneer je dit gelukt is draai je de rand 180 graden naar onder. Herhaal dit 4x, dit moet het eindresultaat zijn:</p>
+            <img src="fotos/stap2-3.jpeg" alt="" class="img-2-3">
+          </article>
+          <article id="stap3">
+            <h4>Stap 3: Maak de onderste laag</h4>
+            <p class="p-s3">
+                Tot nu toe heb je gewoon een simpele strategie toegepast om het witte kruis te maken.
+                Tijd om je eerste algoritme te leren!
+            </p>
+            <div class="s3-card1">
+                <div class="topborder"></div>
+                <p class="card-title">
+                    Left trigger
+                </p>
+                <hr>
+                <p class="alg">
+                    L' U L
+                </p>
+            </div>
+            <div class="s3-card2">
+                <div class="topborder-dark"></div>
+                <p class="card-title">
+                    Right trigger
+                </p>
+                <hr>
+                <p class="alg">
+                   R U R' 
+                </p>
+            </div>
+            <img src="fotos/X.png" alt="" class="kruis-s3">
+            <img src="fotos/stap-3-1.jpeg" alt="" class="img-3-1">
+            <img src="fotos/stap3-2.jpeg" alt="" class="img-3-2">
+            <img src="fotos/question.png" alt="" class="question-s3">
+            <img src="fotos/vinkje.png" alt="" class="vinkje-s3">
+            <img src="fotos/stap3-3.jpeg" alt="" class="img-3-3">
+            <p class="s3-mainuitleg">
+                Zoek nu naar een witte sticker op de bovenste laag die naar de zijkant wijst. <br>
+                Deze witte sticker zal op een van de hoeken staan, en je weet dat hoek stukken altijd 3 kleuren hebben. <br>
+                Kijk nu naar de kleur links of rechts van de witte sticker. <br>
+                Draai de bovenkant van de kubus zodat de sticker naast de witte sticker die ook naar buiten is gericht diagonaal overeenkomt met het midden van dezelfde kleur zoals je kan zien op bovenstaande foto.
+                <br><br>
+                Wanneer je het midden gematched hebt draai je de kubus met de diagonaal naar je toe. <br>
+                Als de sticker in de bovenste laag zich rechts van het midden bevindt, voer dan de rechtse trigger uit. 
+                Als de overeenkomende sticker links van het midden zit, voer dan de linker trigger uit. <br>
+                Bij het voorbeeld zal dus de rechter trigger moeten uitvoeren. <br>
+                <br><br>
+                Als de witte sticker van boven zit dan zorg je dat direct onder die sticker aan de witte kant GEEN andere witte sticker zit en voer je de gepaste trigger uit om hem op de juiste laag te plaatsen.
+                <br><br>
+                Wanneer de sticker aan de onderste laag zit aan de zijkant kan je de gepaste trigger uitvoeren om deze van boven te krijgen.
+            </p>
+            <img src="fotos/stap3-4.jpeg" alt="" class="img-3-4">
+          </article>
+          <article id="stap4">
+            <h4>Stap 4: Maak de tweede laag</h4>
+            <p class="p-s4">
+                Om de middelste laag te maken ga je op zoek naar rand stukken op de bovenste laag waar GEEN geel in zit.
+                Eenmaal je een goed randstukje hebt gevonden draai je de bovenste laag zodat de sticker aan de zijkant overeenkomt met het kleur van een middenstuk.
+            </p>
+            <img src="fotos/X.png" alt="" class="kruis-s2">
+            <img src="fotos/stap4-1.jpeg" alt="" class="img-2-1">
+            <img src="fotos/vinkje.png" alt="" class="vinkje-s2">
+            <img src="fotos/stap4-2.jpeg" alt="" class="img-2-2">
+            <p class="p2-s4">
+                Kijk nu naar de naar boven gerichte sticker op dat randstuk. Die sticker komt overeen met het midden aan de linker of rechterkant.
+            </p>
+            <div class="s3-card1">
+                <div class="topborder"></div>
+                <p class="card-title">
+                    Linkerkant
+                </p>
+                <hr>
+                <p class="alg">
+                    U' + Left Trigger
+                </p>
+            </div>
+            <div class="s3-card2">
+                <div class="topborder-dark"></div>
+                <p class="card-title">
+                    Rechterkant
+                </p>
+                <hr>
+                <p class="alg">
+                    U + Right Trigger
+                </p>
+            </div>
+            <p class="p3-s4">
+                Soms vind je geen randstukjes in de bovenste laag zonder geel maar is de middelste laag nog niet opgelost.
+                In dat geval voer je de gepaste trigger toe op het misplaatste stuk vanboven te zetten zodat je deze kan oplossen  met de normale methode van stap 4.
+            </p>
+            <img src="fotos/stap4-3.jpg" alt="" class="img-3-4">
+          </article>
+          <article id="stap5">
+              <h4>Stap 5: Maak het gele kruis</h4>
+              <p class="p-s4">
+                Het doel van stap 5 is om een geel kruis te maken aan de bovenzijde van de cube.
+                Om dit kruis te maken ga je het volgende algoritme moeten gebruiken: 
+            </p>
+            <div class="s5-card1">
+                <div class="topborder"></div>
+                <p class="card-title">
+                    Geel kruis algoritme
+                </p>
+                <hr>
+                <p class="alg">
+                    F U R U' R' F'
+                </p>
+            </div>
+            <p class="p-s4">
+                PAS OP! Voor je dit algoritme gebruikt is het mogelijk dat je je cube eerst nog goed moet positioneren.
+                Er zijn 3 verschillende standen waarin je cube zich kan bevinden.
+            </p>
+            <div class="stand-left">
+                <p class="stand-title">
+                    Stand 1
+                </p>
+                <div class="content">
+                    <img src="fotos/stap5-1.jpeg" alt="" class="img-5-1">
+                </div>
+                <p class="info-stand">
+                    Geen specifieke patronen. Voer meteen het algoritme uit.
+                </p>
+            </div>
+            <div class="stand-center">
+                <p class="stand-title">
+                    Stand 2
+                </p>
+                <div class="content">
+                    <img src="fotos/stap5-2.jpeg" alt="" class="img-5-2">
+                </div>
+                <p class="info-stand">
+                    De lijn, dit is wanneer je een lijn kan zien van 1x3. Deze plaats je verticaal.
+                </p>
+            </div>
+            <div class="stand-right">
+                <p class="stand-title">
+                    Stand 3
+                </p>
+                <div class="content">
+                    <img src="fotos/stap5-3.jpeg" alt="" class="img-5-3">
+                </div>
+                <p class="info-stand">
+                    De haak, je zet de haak dan linksboven voor je begint.
+                </p>
+            </div>
+            <p class="p-s4">
+                Voer nu het algoritme uit, er is een grote kans dat je dit algoritme meerdere keren moet uitvoeren. Blijf het uivoeren tot je een kruis bekomt.
+            </p>
+            <img src="fotos/stap5-4.jpeg" alt="" class="img-5-4">
+          </article>
+          <article id="stap6">
+              <h4>Stap 6: Maak de gele zijde</h4>
+              <p class="p-s6">
+                De zesde stap is het oplossen van de volledige gele zijde.
+                <br><br>
+                Hoeveel hoeken hebben gele stickers?
+            </p>
+            <div class="stand-left-s6">
+                <p class="stand-title-s6">
+                    0 - 2
+                </p>
+                <div class="content">
+                    <img src="fotos/stap6-1.jpeg" alt="" class="img-6-1">
+                </div>
+                <p class="info-stand">
+                    <b>0</b> = Draai de cube zodat de 2 gele stickers aan de zijkant aan de linkerkant zitten.
+                    <br><br>
+                    <b>2</b> = Draai de cube zodat een gele sticker aan de zijkant aan de linkerkant zit weg van jou.
+                </p>
+            </div>
+            <div class="stand-right-s6">
+                <p class="stand-title-s6">
+                    1
+                </p>
+                <div class="content">
+                    <img src="fotos/stap6-2.jpeg" alt="" class="img-6-2">
+                </div>
+                <p class="info-stand">
+                    Zie je hoe die figuur een beetje lijkt op een visje?<br>
+                    Draai de cube zodat het hoofd van de vis naar linksonder wijst.
+                </p>
+            </div>
+            <p class="top-card">Voer dan dit algoritme uit:</p>
+            <div class="s6-card1">
+                <div class="topborder"></div>
+                <p class="card-title">
+                    Gele zijde algoritme
+                </p>
+                <hr>
+                <p class="alg">
+                    F U R U' R' F'
+                </p>
+            </div>
+            <img src="fotos/stap6-3.jpeg" alt="" class="img-5-4">
+          </article>
+          <article id="stap7">
+              <h4>Stap 7: Fix de hoeken</h4>
+              <p class="p-s6">
+                Het doel van stap 7 is het positioneren van de hoeken. Om deze stap uit te voeren kijk je naar de zijkant van de bovenste laag en zoek je naar 2 stickers op een zijde die dezelfde kleur hebben.
+                Zie je geen? Voer dan 1x het algoritme uit en dan zal je wel zo een situatie hebben.
+                Wanneer je de 2 stickers hebt zorg je dat die matchen met het gepaste vlak zoals je kan zien op de foto en positioneer je deze links van je voor je het algoritme nog eenmaal toepast.
+                Je zal zien dat het algoritme in het begin anders is maar daarna precies hetzelfde is als in stap 6.
+            </p>
+            <img src="fotos/stap7-1.jpeg" alt="" class="img-7-1">
+            <div class="s6-card1">
+                <div class="topborder"></div>
+                <p class="card-title">
+                    Hoeken algoritme
+                </p>
+                <hr>
+                <p class="alg">
+                    L' U R U' L U R' R U R' U R U2 R'
+                </p>
+            </div>
+            <img src="fotos/stap7-2.jpeg" alt="" class="img-5-4">
+          </article>
+          <article id="stap8">
+              <h4>Stap 8: Fix de randen</h4>
+              <p class="p-s8">
+                Dit is de laatste stap in het maken van de Rubiks Cube. <br>
+                In deze stap ga je de randen orienteren zodat deze goed staan.
+                <br><br>
+                Is er al een zijde aan de zijkant opgelost?
+              </p>
+              <div class="stand-left-s6">
+                <p class="stand-title-s6">
+                    Ja
+                </p>
+                <div class="content">
+                    <img src="fotos/stap8-1.jpeg" alt="" class="img-6-1">
+                </div>
+                <p class="info-stand">
+                    Zorg dat de opgeloste kant weg gedraaid is van je. Kijk dan naar het rand stukje bij je F zijde. Vergelijk dan dat kleur met de linker- en rechter zijde. Als die matched aan de linker kant voer je algoritme 2 uit. Wanneer hij matched met de rechterkant voer je algoritme 1 uit.
+                </p>
+            </div>
+            <div class="stand-right-s6">
+                <p class="stand-title-s6">
+                    Nee
+                </p>
+                <div class="content">
+                    <img src="fotos/stap8-2.jpeg" alt="" class="img-6-2">
+                </div>
+                <p class="info-stand">
+                    Kies 1 algoritme en voer deze gewoon uit. Hierna zal je zien dat er wel 1 zijde is gemaakt.
+                </p>
+            </div>
+            <div class="s3-card1">
+                <div class="topborder"></div>
+                <p class="card-title">
+                    Algoritme 1
+                </p>
+                <hr>
+                <p class="alg">
+                    F2 U' R' L F2 L' R U' F2
+                </p>
+            </div>
+            <div class="s3-card2">
+                <div class="topborder-dark"></div>
+                <p class="card-title">
+                    Algoritme 2
+                </p>
+                <hr>
+                <p class="alg">
+                    F2 U R' L F2 L' R U F2
+                </p>
+            </div>
+            <p class="p-s8-1">
+                <b>Eindresultaat:</b>
+            </p>
+            <img src="fotos/stap8-3.jpeg" alt="" class="img-8-3">
+          </article>
+          <article class="final">
+              <h4>Proficiat!</h4>
+              <img src="fotos/meme.png" alt="" class="img-meme">
+          </article>
+    </section>
+    <footer>
+        <p>&copy; 2022 Copyright: <span>Emiel De Waele</span></p>
+    </footer>
+</body>
+</html>
